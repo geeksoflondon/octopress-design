@@ -1,0 +1,10 @@
+<section>
+  <h1>Sponsors</h1>
+  <ul id="sponsors">
+    {% for sponsor in site.categories.Sponsor %}
+      <li>
+        <a href="{{ root_url }}{{ sponsor.url }}"><img src='{{ sponsor.image }}' /></a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

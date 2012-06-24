@@ -1,0 +1,27 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body id='frontpage' class="collapse-sidebar sidebar-footer">
+  <nav role="navigation">{% include navigation.html %}</nav>
+
+  <div id="main">
+    <div id="content">
+      <div>
+        <img src="/images/logo.png" />
+        <article role="article">
+          {{ content | expand_urls: root_url }}
+        </article>
+      </div>
+    </div>
+    {% include ctas.html %}
+    <aside class="sidebar">
+      {% if site.page_asides.size %}
+        {% include_array frontpage_asides %}
+      {% else %}
+        {% include_array default_asides %}
+      {% endif %}
+    </aside>
+  </div>
+  <footer role="contentinfo">{% include footer.html %}</footer>
+  {% include after_footer.html %}
+</body>
+</html>

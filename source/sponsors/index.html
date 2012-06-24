@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="blog-index">
+  {% assign index = true %}
+  {% for post in site.categories.Sponsor %}
+  {% assign content = post.content %}
+    <article>
+      {% include article.html %}
+    </article>
+  {% endfor %}
+  <article>
+    <h1>Interested in sponsoring?</h1>
+    <p>Drop Cristiano (<a href='mailto:cristiano@geeksoflondon.com'>{{site.email}}</a>) an email to find out more.</p>
+  </article>
+</div>
+<aside class="sidebar">
+  {% if site.blog_index_asides.size %}
+    {% include_array blog_index_asides %}
+  {% else %}
+    {% include_array default_asides %}
+  {% endif %}
+</aside>

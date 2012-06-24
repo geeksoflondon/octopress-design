@@ -1,0 +1,28 @@
+body > header {
+  background: #fff;
+
+  h1 {
+    display: inline-block;
+    margin: 0;
+    a, a:visited, a:hover {
+      color: $title_color;
+      text-decoration: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  h2 {
+    margin: .2em 0 0;
+    @extend .sans;
+    font-size: 1em;
+    color: $subtitle-color;
+    font-weight: normal;
+    background-color: inherit;
+    background-color: #000;
+    background-color: #f2f2f2;
+    float: left;
+    padding: 2% 2%;
+    color: #333;
+  }
+}
