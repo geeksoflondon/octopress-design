@@ -1,4 +1,4 @@
-$noise-bg: image-url('/images/noise.png') top left !default;
+$noise-bg: image-url('../images/noise.png') top left !default;
 $img-border: inline-image('dotted-border.png');
 
 // Main Link Colors
@@ -12,7 +12,7 @@ $main-bg: #fff !default;
 $page-bg: #fff !default;
 $article-border: #eeeeee !default;
 
-$header-bg:  url(/images/background.jpg) !default;
+$header-bg:  url(../images/background.jpg) !default;
 $header-border: lighten(#418284, 15) !default;
 $title-color: #f2f2f2 !default;
 $subtitle-color: #ccc !default;
@@ -63,7 +63,7 @@ a {
 }
 
 html {
-  background: $page-bg image-url('/images/line-tile.png') top left;
+  background: $page-bg image-url('../images/line-tile.png') top left;
 }
 body {
   > div {
